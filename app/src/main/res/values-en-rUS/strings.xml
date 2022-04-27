@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TheWeather</string>
+    <string name="temp">Temp</string>
+    <string name="standard">Standard</string>
+    <string name="metric">Metric</string>
+    <string name="imperial">Imperial</string>
+    <string name="spanish">Spanish</string>
+    <string name="english">English</string>
+    <string name="currently">Actually </string>
+    <string name="settings">Settings</string>
+    <string name="settings_theme_key">Theme</string>
+    <string name="settings_theme_title">Theme for the app</string>
+    <string name="settings_theme_dialog_title">Select the mode for the app</string>
+    <string name="default_string">System default</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
+    <string name="exit">Exit</string>
+</resources>

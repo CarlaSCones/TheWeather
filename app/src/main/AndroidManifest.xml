@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="es.ieslavereda.myweather">
+
+    <!--Siempre-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!--Solo para obtener localizacion precisa-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyWeather"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".activities.DetallesDia"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Principal"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.Prevision"
+            android:exported="true"></activity>
+        <activity
+            android:name="es.ieslavereda.preferencias.PreferenciasActivity"
+            android:exported="true"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ElTiempo</string>
+    <string name="temp">Temp</string>
+    <string name="standard">Estandard</string>
+    <string name="metric">Metrico</string>
+    <string name="imperial">Imperial</string>
+    <string name="spanish">Español</string>
+    <string name="english">Ingles</string>
+    <string name="currently">Actualmente</string>
+    <string name="settings">Ajustes</string>
+    <string name="settings_theme_key">Tema</string>
+    <string name="settings_theme_title">Tema de la app</string>
+    <string name="settings_theme_dialog_title">Selecciona el modo de la app</string>
+    <string name="default_string">Sistema por defecto</string>
+    <string name="light">Claro</string>
+    <string name="dark">Oscuro</string>
+    <string name="exit">Salir</string>
+</resources>

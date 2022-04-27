@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Preferencias">
+        <ListPreference
+            android:defaultValue="standard"
+            android:entries="@array/unidades_entries"
+            android:entryValues="@array/unidades_values"
+            android:key="unidades"
+            android:title="Unidades"
+            app:summary="Unidades en" />
+        <ListPreference
+            android:entries="@array/settings_theme_entries"
+            android:entryValues="@array/settings_theme_values"
+            android:key="@string/settings_theme_key"
+            android:title="@string/settings_theme_title"
+            app:dialogTitle="@string/settings_theme_dialog_title" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/dia"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textColor="#191919"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imagen"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/descripcion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/dia"
+        app:layout_constraintTop_toBottomOf="@+id/dia" />
+
+    <TextView
+        android:id="@+id/hora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textColor="#191919"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/dia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dia" />
+
+    <TextView
+        android:id="@+id/textTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/temp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/descripcion"
+        app:layout_constraintTop_toBottomOf="@+id/descripcion" />
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/textTemp"
+        app:layout_constraintStart_toEndOf="@+id/textTemp" />
+
+    <TextView
+        android:id="@+id/textMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:text="Max"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textTemp"
+        app:layout_constraintEnd_toStartOf="@+id/textMin" />
+
+    <TextView
+        android:id="@+id/textMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:text="Min"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textMax"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="18.00"
+        android:textColor="#F44336"
+        app:layout_constraintBottom_toBottomOf="@+id/textMax"
+        app:layout_constraintStart_toEndOf="@+id/textMax" />
+
+    <TextView
+        android:id="@+id/min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="18.00"
+        android:textColor="#3F51B5"
+        app:layout_constraintBottom_toBottomOf="@+id/textMin"
+        app:layout_constraintStart_toEndOf="@+id/textMin" />
+
+    <TextView
+        android:id="@+id/textDia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/dia"
+        app:layout_constraintEnd_toStartOf="@+id/hora"
+        app:layout_constraintStart_toEndOf="@+id/dia" />
+</androidx.constraintlayout.widget.ConstraintLayout>
